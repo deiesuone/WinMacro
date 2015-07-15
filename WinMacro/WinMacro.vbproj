@@ -267,6 +267,7 @@
     <None Include="Database\WinMacro">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="LICENSE" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -293,7 +294,7 @@
     <Folder Include="Icon\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="LICENSE" />
+    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
