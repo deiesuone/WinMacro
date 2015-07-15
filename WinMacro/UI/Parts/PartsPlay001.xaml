@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="PartsPlay001"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+    <Grid>
+        <GroupBox x:Name="GrpPartsPlay" Header="動作">
+            <StackPanel>
+                <ComboBox x:Name="CmbPlayType" SelectedIndex="0">
+                    <ComboBoxItem Content="何もしない" />
+                    <ComboBoxItem Content="キー入力を行う" />
+                    <ComboBoxItem Content="座標A'に移動する" />
+                    <ComboBoxItem Content="座標A'をクリックする" />
+                    <ComboBoxItem Content="座標A'をダブルクリックする" />
+                    <ComboBoxItem Content="座標A'をクリックして元の座標に戻る" />
+                    <ComboBoxItem Content="座標A'をダブルクリックして元の座標に戻る" />
+                </ComboBox>
+                <GroupBox x:Name="GrpPointAd" Header="座標A'" Visibility="Collapsed">
+                    <StackPanel>
+                        <WrapPanel>
+                            <Label Content="X:" />
+                            <TextBox x:Name="TxtAdX" MinWidth="50" />
+                        </WrapPanel>
+                        <WrapPanel>
+                            <Label Content="Y:" />
+                            <TextBox x:Name="TxtAdY" MinWidth="50" />
+                        </WrapPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox x:Name="GrpInputKey" Header="キー入力" Visibility="Collapsed">
+                    <StackPanel>
+                        <TextBlock x:Name="TbkKeyInput" Text="" />
+                        <Button x:Name="BtnKeyInput" Content="入力フォームを開く" />
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>

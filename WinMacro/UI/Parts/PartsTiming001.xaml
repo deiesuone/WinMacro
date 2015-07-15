@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="PartsTiming001"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+    <Grid>
+        <GroupBox x:Name="GrpTiming" Header="タイミング">
+            <DockPanel>
+                <StackPanel>
+                    <Label Content="実行まで"/>
+                    <TextBox x:Name="TxtInterval" VerticalContentAlignment="Center" MinWidth="50"></TextBox>
+                    <Label Content="ミリ秒待つ"/>
+                </StackPanel>
+            </DockPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>

@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="CommandType003"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:WinMacro="clr-namespace:WinMacro"
+             mc:Ignorable="d">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <GroupBox Header="コマンド003">
+                <StackPanel>
+                    <WrapPanel>
+                        <WinMacro:PartsTiming001 x:Name="PartsTiming"/>
+                        <WinMacro:PartsConditions001 x:Name="PartsConditions1" Header="条件1"/>
+                        <WinMacro:PartsConditions002 x:Name="PartsConditions2" Header="条件2"/>
+                        <WinMacro:PartsConditions001 x:Name="PartsConditions3" Header="条件3"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <WinMacro:PartsPlay001 x:Name="PartsPlay1" Header="動作1"/>
+                        <WinMacro:PartsPlay001 x:Name="PartsPlay2" Header="動作2"/>
+                        <WinMacro:PartsPlay001 x:Name="PartsPlay3" Header="動作3"/>
+                    </WrapPanel>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

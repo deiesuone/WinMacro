@@ -1,0 +1,34 @@
+﻿<Window x:Class="InputForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="キー入力">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="DgdInputKey" Grid.ColumnSpan="5" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True">
+            <DataGrid.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="LightSkyBlue"  />
+                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="LightSkyBlue" />
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Index}" Header="No" />
+                <DataGridTextColumn Binding="{Binding KeyEventName}" Header="イベント名" />
+                <DataGridTextColumn Binding="{Binding KeyName}" Header="キー" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <ToggleButton Grid.Row="1" Grid.Column="0" x:Name="TbnStartStop" Content="入力開始" Margin="10" />
+        <Button Grid.Row="1" Grid.Column="1" x:Name="BtnDelete" Content="選択行を削除" Margin="10" />
+        <Button Grid.Row="1" Grid.Column="2" x:Name="BtnClear" Content="クリア" Margin="10" />
+        <Button Grid.Row="1" Grid.Column="3" x:Name="BtnSave" Content="保存して終了" Margin="10" />
+        <Button Grid.Row="1" Grid.Column="4" x:Name="BtnNoSave" Content="保存せずに終了" Margin="10" />
+    </Grid>
+</Window>

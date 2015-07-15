@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="PartsConditions001"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+    <Grid>
+        <GroupBox x:Name="GrpConditions" Header="条件">
+            <WrapPanel>
+                <StackPanel>
+                    <ComboBox x:Name="CmbConditionsType" SelectedIndex="0">
+                        <ComboBoxItem Content="座標Aの色が色Aの時" />
+                        <ComboBoxItem Content="現在座標の色が色Aの時" />
+                        <ComboBoxItem Content="必ず実行" />
+                    </ComboBox>
+                    <WrapPanel>
+                        <GroupBox x:Name="GrpPointA" Header="座標A">
+                            <StackPanel>
+                                <WrapPanel>
+                                    <Label Content="X:" Width="23"/>
+                                    <TextBox x:Name="TxtAX" VerticalContentAlignment="Center" MinWidth="50" />
+                                </WrapPanel>
+                                <WrapPanel>
+                                    <Label Content="Y:" Width="23"/>
+                                    <TextBox x:Name="TxtAY" VerticalContentAlignment="Center" MinWidth="50" />
+                                </WrapPanel>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox x:Name="GrpColorA" Header="色A">
+                            <StackPanel>
+                                <WrapPanel>
+                                    <Label Content="RGB:" Width="40"/>
+                                    <TextBox x:Name="TxtARGB" VerticalContentAlignment="Center" MinWidth="60" />
+                                </WrapPanel>
+                            </StackPanel>
+                        </GroupBox>
+                    </WrapPanel>
+                </StackPanel>
+            </WrapPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>
