@@ -250,6 +250,8 @@ Public Class InputForm
 
         With DirectCast(Me.DgdInputKey.ItemsSource, ObservableCollection(Of StractInputKeyData))
 
+            .Clear
+
             Dim index = Me.DgdInputKey.SelectedIndex
 
             For Each tmp In Me.InputDataBuff.Reverse
