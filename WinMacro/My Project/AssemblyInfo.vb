@@ -15,7 +15,7 @@ Imports System.Windows
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("DS1")> 
 <Assembly: AssemblyProduct("WinMacro")> 
-<Assembly: AssemblyCopyright("Copyright © DS1 2015")> 
+<Assembly: AssemblyCopyright("Copyright © DS1 2016")> 
 <Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(false)>
 
@@ -55,5 +55,5 @@ Imports System.Windows
 ' 既定値にすることができます:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.6.1")> 
-<Assembly: AssemblyFileVersion("1.0.6.1")> 
+<Assembly: AssemblyVersion("1.0.7.0")> 
+<Assembly: AssemblyFileVersion("1.0.7.0")> 
