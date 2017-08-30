@@ -109,7 +109,7 @@ Public Class GlobalKeyHook
                 hookproc = AddressOf KeybordHookProc
 
                 ' モジュールのハンドラを取得
-                Dim moduel As IntPtr = Marshal.GetHINSTANCE(prmFrm.GetType().Assembly.GetModules()(0))
+                Dim moduel As IntPtr = NativeMethods.GetModuleHandle(IntPtr.Zero)
 
                 ' フックを取得
                 hHook = NativeMethods.SetWindowsHookEx(WH_KEYBOARD_LL, hookproc, moduel, 0)
@@ -309,6 +309,15 @@ Friend NotInheritable Class NativeMethods
     ''' <remarks></remarks>
     <DllImport("User32.dll", CharSet:=CharSet.Auto, CallingConvention:=CallingConvention.StdCall)> _
     Friend Overloads Shared Function UnhookWindowsHookEx(ByVal idHook As Integer) As Boolean
+    End Function
+
+    ''' <summary>
+    ''' GetModuleHandle
+    ''' </summary>
+    ''' <param name="lpModuleName"></param>
+    ''' <returns></returns>
+    <DllImport("kernel32.dll", CharSet:=CharSet.Auto, CallingConvention:=CallingConvention.StdCall)>
+    Public Overloads Shared Function GetModuleHandle(lpModuleName As String) As IntPtr
     End Function
 
 #End Region
