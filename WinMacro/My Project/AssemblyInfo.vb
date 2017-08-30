@@ -14,8 +14,8 @@ Imports System.Windows
 <Assembly: AssemblyTitle("WinMacro")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("DS1")> 
-<Assembly: AssemblyProduct("WinMacro")> 
-<Assembly: AssemblyCopyright("Copyright © DS1 2016")> 
+<Assembly: AssemblyProduct("WinMacro")>
+<Assembly: AssemblyCopyright("Copyright © DS1 2017")>
 <Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(false)>
 
@@ -42,7 +42,7 @@ Imports System.Windows
 
 
 'このプロジェクトが COM に公開される場合、次の GUID がタイプ ライブラリの ID になります。
-<Assembly: Guid("825bef22-8212-4a84-a1f2-5b0a73db16bb")> 
+<Assembly: Guid("825bef22-8212-4a84-a1f2-5b0a73db16bb")>
 
 ' アセンブリのバージョン情報は、以下の 4 つの値で構成されています:
 '
@@ -55,5 +55,5 @@ Imports System.Windows
 ' 既定値にすることができます:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.7.0")> 
-<Assembly: AssemblyFileVersion("1.0.7.0")> 
+<Assembly: AssemblyVersion("1.0.8.0")>
+<Assembly: AssemblyFileVersion("1.0.8.0")>
